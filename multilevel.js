@@ -3,6 +3,7 @@
 class ClassA{
     //properties
     name = 'anjali'
+    a = 20;
 
     //constructor
     constructor(name){
@@ -17,6 +18,7 @@ class ClassA{
 class ClassB extends ClassA{
     //properties
     surname = 'rathor'
+    b = 30;
     
     //constructor
     constructor(name,surname){
@@ -32,6 +34,7 @@ class ClassB extends ClassA{
 class ClassC extends ClassB{
     //properties
     A = 'everyone';
+    c = 45;
     //constructor
     constructor(A){
         super();
@@ -48,3 +51,4 @@ class ClassC extends ClassB{
 let x = new ClassC();
 x.myMethodA();
 x.myMethodB();
+console.log(x.a+x.b+x.c)
